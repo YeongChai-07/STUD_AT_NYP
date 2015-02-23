@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content">
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView 
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"  
+    android:text="Instructions: " 
+    android:layout_width="wrap_content" 
+    android:id="@+id/textView1"/>
+        <TextView 
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"  
+    android:text="For the first time usage, please set up the number of hours you wish to be scheduled in your time scheduler." 
+    android:layout_width="wrap_content" 
+    android:id="@+id/textView1" android:padding="10dp"/>
+    <LinearLayout 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:id="@+id/LinearLayout01"
+    android:padding="10dp" 
+    android:weightSum="1">
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="No. hours :" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/TextView01"
+        android:layout_weight="0.5"
+        />
+        <EditText 
+        android:layout_height="wrap_content" 
+        android:inputType="number"  
+        android:hint="12"
+        android:layout_width="wrap_content" 
+        android:autoText="false" 
+        android:numeric="integer" 
+        android:maxLength="2" android:id="@+id/ftcet1">
+            <requestFocus></requestFocus>
+        </EditText>
+         <TextView 
+         android:layout_height="wrap_content" 
+         android:textAppearance="?android:attr/textAppearanceLarge" 
+         android:text="Hrs" 
+         android:layout_width="wrap_content" 
+         android:id="@+id/TextView02"
+         android:layout_weight="0.2"
+        />
+       
+    </LinearLayout>
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:textAppearance="?android:attr/textAppearanceMedium" 
+    android:text="We need to know the time that you wish to begin for the time scheduler." 
+    android:padding="10dp" 
+    android:layout_width="wrap_content" android:id="@+id/TextView03"/>
+    
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:textAppearance="?android:attr/textAppearanceSmall" 
+    android:text="Note :" 
+    android:layout_width="wrap_content"/>
+    
+    
+    <TextView 
+    android:layout_height="wrap_content" 
+    android:textAppearance="?android:attr/textAppearanceSmall" 
+    android:text="The starting hours are in 24:00 hrs format"  
+    android:layout_width="wrap_content"/>
+    
+    <LinearLayout 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:id="@+id/LinearLayout02"
+    android:padding="10dp"
+    android:weightSum="1">
+        
+        <TextView
+        android:layout_weight="0.5" 
+        android:layout_height="wrap_content" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="Start Time :" 
+        android:layout_width="wrap_content"/>
+        
+        <EditText 
+        android:layout_height="wrap_content" 
+        android:hint="24" 
+        android:inputType="number" 
+        android:layout_width="50dp" 
+        android:autoText="false"
+        android:numeric="integer" 
+        android:maxLength="2" android:id="@+id/ftcet2">
+        </EditText>
+        <TextView 
+        android:layout_height="wrap_content" 
+        android:text=" : " 
+        android:layout_width="wrap_content"
+        />
+        <EditText 
+        android:layout_height="wrap_content" 
+        android:text="00" 
+        android:inputType="number" 
+        android:layout_width="50dp" 
+        android:editable="false" 
+        android:clickable="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false" 
+        android:freezesText="true" 
+        android:longClickable="false"/>
+    </LinearLayout>
+    <Button 
+    android:padding="10dp"
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:text="Create time scheduler" android:id="@+id/ftcbtn1"/>
+ </LinearLayout>
+    </ScrollView>    

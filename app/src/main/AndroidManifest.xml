@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.sit.ict.ippt_app" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme= "@android:style/Theme.NoTitleBar"> >
+
+        <activity android:name=".UserLoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginProfile"
+            android:label="UserLogin">
+        </activity>
+        <activity android:name=".LoginProfile2"
+            android:label="UserProfile">
+        </activity>
+
+        <activity
+            android:name=".yc_showBestResult_main"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:label="Pull-Up"
+            android:name=".pullUpActivity">
+        </activity>
+        <activity
+            android:label="Sit-Up"
+            android:name=".sitUpActivity">
+        </activity>
+        <activity
+            android:label="Shuttle Run"
+            android:name=".ShuttleRunActivity">
+        </activity>
+        <activity
+            android:label="Standing Board Jump"
+            android:name=".toStandingBoardJump">
+
+        </activity>
+        <activity
+            android:label="Sit and Reach"
+            android:name=".sitNReachActivity">
+
+        </activity>
+        <activity
+            android:label="2.4 KM Run"
+            android:name=".longDistanceRun">
+
+        </activity>
+
+        <activity
+            android:label="Take Napfa Test"
+            android:name=".yc_takeNapfaMain">
+        </activity>
+
+        <activity
+            android:label="Show Napfa Result"
+            android:name=".yc_showNapfaResult">
+        </activity>
+
+        <activity
+            android:label="Selected Test Station Result Chart"
+            android:name=".selectedTestStationResultChart">
+        </activity>
+
+        <activity
+            android:label="Show Napfa Test Result"
+            android:name=".yc_napfaPerfMain">
+        </activity>
+    </application>
+
+</manifest>

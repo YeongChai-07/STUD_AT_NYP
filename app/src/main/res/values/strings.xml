@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, studMainActivity!</string>
+    <string name="app_name">STUD-AT-NYP</string>
+    <string name="some_title">Other</string>
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="main_no_items">No Booking Found</string>
+    <string name="howToUse2pt4">Instructions:\n1.Press the Start button to begin the run. \n(this will start the stopwatch)\n2.Press the stop button to end this running session.</string>
+    <string name="howToUseReps">Instructions:\nEnter the number of reps you completed and press Save when you are done.</string>
+    <string name="howToUseNapfaMain">Instructions:\nClick on the respective picture below (an image of a NAPFA test item) to navigate to the respective NAPFA test item submit result page.</string>
+    <string name="howToUseNapfaHistory">Instructions:\n1.Select whether you wish to review results of all NAPFA test results (or specify the number of NAPFA test results to show).\n2. Click on Review and the results will be populated on the table below.\n</string>
+    <string name="resultLimit">Show the specified no. of result\n(Choose 0 to show all results for the test station).</string>
+
+    <string-array name="napfa">
+        <item>Sit Ups</item>
+        <item>Standing Board Jump</item>
+        <item>Sit and Reach</item>
+        <item>Pull Ups</item>
+        <item>Shuttle Run</item>
+        <item>2.4KM Run</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

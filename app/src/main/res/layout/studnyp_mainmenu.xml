@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bckgrd" >
+
+    <Button
+        android:id="@+id/nypMainRyanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Ryan" />
+
+    <Button
+        android:id="@+id/nypMainYCBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To YC" />
+
+    <Button
+        android:id="@+id/nypMainEugeneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Eugene" />
+
+    <Button
+        android:id="@+id/nypMainSamuelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Samuel" />
+
+</LinearLayout>

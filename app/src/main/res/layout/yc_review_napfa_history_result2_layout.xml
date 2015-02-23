@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/bckgrd">
+    
+    
+ 	<!-- TableLayout 
+ 	    android:id="@+id/tlNapfaReview"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_marginBottom="20dp"
+ 	    android:stretchColumns="*"
+ 	    android:shrinkColumns="*">
+ 	    <TableRow 
+ 	        android:id="@+id/trRow1"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/thDate"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="Date"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/thPullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="Pull Ups" />
+ 	        <TextView
+ 	            android:id="@+id/thSR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="4 X 10 Shuttle Run" />
+ 	        <TextView
+ 	            android:id="@+id/th2pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="2.4 KM (6 X 400 m) Run" />
+ 	            
+ 	        <TextView
+ 	        	android:id="@+id/thShowAwards"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content"
+ 	        	android:text="Show award" />
+ 	    </TableRow>
+ 	    
+ 	    <TableRow 
+ 	        android:id="@+id/trRow2"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc1Date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="23/5/2011"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc1PullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="2 reps" />
+ 	        <TextView
+ 	            android:id="@+id/tc1SR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="12 secs" />
+ 	        <TextView
+ 	            android:id="@+id/tc12pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="13 mins 25 secs" />
+ 	            
+ 	            
+ 	        <CheckBox
+ 	        	android:id="@+id/tc1ShowAward"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content" /> 
+ 	        	   
+ 	    </TableRow>
+ 	     <TableRow 
+ 	        android:id="@+id/trRow3"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc2Date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="26/5/2011"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc2PullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="2 reps" />
+ 	        <TextView
+ 	            android:id="@+id/tc2SR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="11.5 secs" />
+ 	        <TextView
+ 	            android:id="@+id/tc22pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="12 mins 50 secs" />
+ 	            
+ 	         <CheckBox
+ 	        	android:id="@+id/tc2ShowAward"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content" />    
+ 	    </TableRow>
+ 	    
+ 	     <TableRow 
+ 	        android:id="@+id/trRow4"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc3Date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="30/5/2011"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc3PullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="4 reps" />
+ 	        <TextView
+ 	            android:id="@+id/tc3SR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="11 secs" />
+ 	        <TextView
+ 	            android:id="@+id/tc32pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="12 mins 35 secs" />
+ 	            
+ 	        <CheckBox
+ 	        	android:id="@+id/tc3ShowAward"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content" /> 
+ 	    </TableRow>
+ 	     <TableRow 
+ 	        android:id="@+id/trRow5"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc4Date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="3/6/2011"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc4PullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="5 reps" />
+ 	        <TextView
+ 	            android:id="@+id/tc4SR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="10.7 secs" />
+ 	        <TextView
+ 	            android:id="@+id/tc42pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="12 mins 23 secs" />
+ 	            
+ 	            
+ 	        <CheckBox
+ 	        	android:id="@+id/tc4ShowAward"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content" />     
+ 	    </TableRow>
+ 	    
+ 	     <TableRow 
+ 	        android:id="@+id/trRow6"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content">
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc5Date"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="7/6/2011"/>
+ 	        
+ 	        <TextView
+ 	            android:id="@+id/tc5PullUp"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="5 reps" />
+ 	        <TextView
+ 	            android:id="@+id/tc5SR"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="10.6 secs" />
+ 	        <TextView
+ 	            android:id="@+id/tc52pt4"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:text="12 mins 19 secs" />
+ 	            
+ 	        <CheckBox
+ 	        	android:id="@+id/tc5ShowAward"
+ 	        	android:layout_width="wrap_content"
+ 	        	android:layout_height="wrap_content" />     
+ 	    </TableRow>
+ 	</TableLayout-->
+ 	
+ 	
+ 	<Button
+ 	        android:id="@+id/btnShowAwards"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="Show awards of selected test date(s)"
+ 	        android:layout_gravity="center" />
+
+</LinearLayout>

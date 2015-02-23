@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bckgrd">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout1">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        </LinearLayout>
+        <TextView android:layout_height="wrap_content" android:text="TextView" android:id="@+id/wtv1" android:layout_width="wrap_content" android:layout_centerHorizontal="true"></TextView>
+        <Button android:id="@+id/wbtn1" android:layout_below="@id/wtv1" android:layout_height="wrap_content" android:text="Finish" android:layout_width="wrap_content" android:layout_centerHorizontal="true"></Button>
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bckgrd">
+    <TextView 
+    android:text="Activity" 
+    android:id="@+id/textView1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText android:id="@+id/aaet1" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    <TextView 
+    android:text="Activity Abbreviate Name" 
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" 
+    android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView 
+    android:text="Max 4 letter" 
+    android:layout_width="wrap_content" 
+    android:id="@+id/textView2" 
+    android:layout_height="wrap_content" />
+    <EditText android:id="@+id/aaet2" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:maxLength="4"/>
+    <Button 
+    android:text="Create new activity" 
+    android:id="@+id/aabtn1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"/>
+    
+</LinearLayout>

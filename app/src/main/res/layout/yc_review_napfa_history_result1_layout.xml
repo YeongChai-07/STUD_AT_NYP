@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/ltMain"
+    android:background="@drawable/bckgrd">
+    <ScrollView 
+    	android:id="@+id/scrollView1" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="match_parent">
+    	
+        <HorizontalScrollView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content">
+        	
+            <TableLayout  
+            	android:layout_width="fill_parent" 
+            	android:layout_height="wrap_content" 
+            	android:id="@+id/tlNapfaReview">
+            	
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+  
+    <TextView
+        android:id="@+id/napfaSuggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ 	
+ 	    
+ 	    <Button
+ 	        android:id="@+id/btnGoToHistory2"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="Show best results of each station"
+ 	        android:layout_gravity="center" />
+
+ 	    <Button
+ 	        android:id="@+id/showChartBtn"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="Show results in line graph "
+ 	        android:layout_gravity="center" />
+
+</LinearLayout>

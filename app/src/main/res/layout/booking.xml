@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/sg.edu.sit.ict.ippt_app"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrd" >
+
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar"
+        app:title="@string/some_title"
+        style="@style/ActionBar"
+        
+        >
+
+    </com.markupartist.android.widget.ActionBar>
+
+    <Spinner
+        android:id="@+id/spVenue"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_blue" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spVenue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:text="Select Date" />
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spVenue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_blue"
+        android:visibility="invisible" />
+
+	
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+         android:gravity="left"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_above="@id/btnDate"
+       android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
