@@ -11,12 +11,12 @@
         android:theme= "@android:style/Theme.NoTitleBar"> >
 
         <activity android:name=".UserRegisterActivity"
-            android:label="@string/app_name">
+            android:label="User Registration Page">
 
         </activity>
 
         <activity android:name=".LoginProfile"
-            android:label="UserLogin">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

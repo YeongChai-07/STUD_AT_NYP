@@ -83,7 +83,8 @@ public class yc_takeNapfaMain extends Activity {
         ycBL = new yc_BL(myContext);
         myDB = new myDbAdapter(myContext);
 
-        boolean existsTodayNapfaRecord = ycBL.processCheckIfTestDateExists(getTodayDate(), adminNo);
+        // Removing the code to check for multiple attempts of napfa test of the same day
+        /*boolean existsTodayNapfaRecord = ycBL.processCheckIfTestDateExists(getTodayDate(), adminNo);
 
         if(existsTodayNapfaRecord)
         {
@@ -99,7 +100,7 @@ public class yc_takeNapfaMain extends Activity {
                         }
 
                     }).show();
-        }
+        }*/
 
         if(napfaSP.contains("adminNo"))
         {
