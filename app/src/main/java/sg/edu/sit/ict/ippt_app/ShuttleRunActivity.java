@@ -10,10 +10,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import sg.edu.sit.ict.ippt_app.extras.Chronometer;
 
 public class ShuttleRunActivity extends Activity {
-    Chronometer myStopWatch;
+    //Chronometer myStopWatch;
+    EditText myStopWatch;
     Button startBtn;
     Button doneBtn;
     Button cancelBtn;
@@ -26,10 +30,10 @@ public class ShuttleRunActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.shutterun);
+        setContentView(R.layout.shutterun_testing);
 
-        myStopWatch = (Chronometer)findViewById(R.id.shuttleRunChronometer);
-
+        //myStopWatch = (Chronometer)findViewById(R.id.shuttleRunChronometer);
+        myStopWatch = (EditText)findViewById(R.id.etShutter_Time);
         startBtn = (Button)findViewById(R.id.button3);
         doneBtn = (Button)findViewById(R.id.btn_SignIn);
         cancelBtn = (Button)findViewById(R.id.btn_SignUp);
@@ -40,10 +44,10 @@ public class ShuttleRunActivity extends Activity {
         {
             myStopWatch.setText(Float.toString(napfaSP.getFloat("shuttleRun", 0.0f)) );
         }
-        else
+        /*else
         {
             doneBtn.setEnabled(isFirstRun);
-        }
+        }*/
 
         startBtn.setOnClickListener(new OnClickListener(){
 
@@ -58,6 +62,7 @@ public class ShuttleRunActivity extends Activity {
 
                                 public void onClick(DialogInterface dialog, int which)
                                 {
+                                    /*
                                     //startBtn.setEnabled(true);
                                     myStopWatch.setText("00.0");
                                     //status = false;
@@ -70,7 +75,10 @@ public class ShuttleRunActivity extends Activity {
                                         myStopWatch.start();
                                         startBtn.setText("Stop Timer");
                                         isFirstRun = true;
-                                    }
+                                    }*/
+
+                                    setResult(RESULT_CANCELED);
+                                    finish();
                                 }
 
                             })
@@ -85,7 +93,7 @@ public class ShuttleRunActivity extends Activity {
                     //this.onClick(v);
                 }
 
-                applyStopWatchState();
+                //applyStopWatchState();
             }
 
         });
@@ -94,13 +102,23 @@ public class ShuttleRunActivity extends Activity {
 
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                float secs = Float.parseFloat(myStopWatch.getText().toString());
-                secs =  Math.round(secs*100)/100.0f;
 
-                setResult(RESULT_OK, new Intent()
-                        .putExtra("SHUTTLE_NO", secs));
+                try
+                {
+                    float secs = Float.parseFloat(myStopWatch.getText().toString());
+                    secs = Math.round(secs * 100) / 100.0f;
 
-                finish();
+                    setResult(RESULT_OK, new Intent()
+                           .putExtra("SHUTTLE_NO", secs));
+
+                    finish();
+                }
+                catch(NumberFormatException nfe)
+                {
+                    myStopWatch.setText("0.0");
+                    Toast.makeText(myContext, "You entered an invalid input for Mins. Reverting back to the default value.", Toast.LENGTH_LONG).show();
+                    return;
+                }
             }
 
         });
@@ -137,7 +155,7 @@ public class ShuttleRunActivity extends Activity {
         });
     }//end onCreate
 
-    void applyStopWatchState()
+    /*void applyStopWatchState()
     {
         if(!isFirstRun){
             myStopWatch.start();
@@ -151,5 +169,5 @@ public class ShuttleRunActivity extends Activity {
             doneBtn.setEnabled(true);
 
         }
-    }
+    }*/
 }

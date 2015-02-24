@@ -13,7 +13,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.CountDownTimer;
 
 
 public class sitUpActivity extends Activity{
@@ -34,7 +33,7 @@ public class sitUpActivity extends Activity{
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.situp);
+        setContentView(R.layout.situp_testing);
 
         myTV = (TextView)findViewById(R.id.tvSURemainTime);
         doneBtn = (Button)findViewById(R.id.suDone);
@@ -48,9 +47,9 @@ public class sitUpActivity extends Activity{
 
         if(napfaSP.contains("adminNo"))
         {
-            myET.setText(Integer.toString(napfaSP.getInt("sitUp", 0)) );
+            myET.setText(Integer.toString(napfaSP.getInt("sitUp", 0)));
         }
-        else
+        /*else
         {
             applyCountDownConfig();
         }
@@ -80,7 +79,7 @@ public class sitUpActivity extends Activity{
 
             }
 
-        });
+        });*/
 
         plusBtn.setOnClickListener(new OnClickListener(){
 
@@ -142,7 +141,8 @@ public class sitUpActivity extends Activity{
                 //Do your fanciful validation code here
                 catch(NumberFormatException nfe)
                 {
-                    Toast.makeText(myContext, "There is nothing to submit!", Toast.LENGTH_LONG).show();
+                    myET.setText("0");
+                    Toast.makeText(myContext,  "You entered an invalid input. Reverting back to the default value.", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -180,7 +180,7 @@ public class sitUpActivity extends Activity{
 
     }
 
-    void applyCountDownConfig()
+    /*void applyCountDownConfig()
     {
         if(countDownStop)
         {
@@ -210,6 +210,6 @@ public class sitUpActivity extends Activity{
             minusBtn.setEnabled(true);
             countDownStop = true;
         }
-    }
+    }*/
 
 }

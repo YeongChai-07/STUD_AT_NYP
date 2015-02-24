@@ -2,7 +2,6 @@ package sg.edu.sit.ict.ippt_app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -35,7 +34,7 @@ public class pullUpActivity extends Activity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pullup);
+        setContentView(R.layout.pullup_testing);
 
         myTV = (TextView)findViewById(R.id.tvPURemainTime);
         doneBtn = (Button)findViewById(R.id.chinUpDone);
@@ -49,9 +48,9 @@ public class pullUpActivity extends Activity {
 
         if(napfaSP.contains("adminNo"))
         {
-            pullUpET.setText(Integer.toString(napfaSP.getInt("pullUp", 0)) );
+            pullUpET.setText(Integer.toString(napfaSP.getInt("pullUp", 0)));
         }
-        else
+        /*else
         {
             applyCountDownConfig();
         }
@@ -83,7 +82,7 @@ public class pullUpActivity extends Activity {
 
             }
 
-        });
+        });*/
 
         plusBtn.setOnClickListener(new OnClickListener(){
 
@@ -181,7 +180,7 @@ public class pullUpActivity extends Activity {
         });
     }
 
-    void applyCountDownConfig()
+    /*void applyCountDownConfig()
     {
         if(countDownStop)
         {
@@ -211,6 +210,6 @@ public class pullUpActivity extends Activity {
             minusBtn.setEnabled(true);
             countDownStop = true;
         }
-    }
+    }*/
 
 }

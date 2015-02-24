@@ -64,10 +64,20 @@ public class UserRegisterActivity extends Activity {
                 try
                 {
                     addAgeInt = Integer.parseInt(str_Age);
-                    myDB.insertEntry(addNameStr, addPassStr, ADMIN_NO, addAgeInt);
 
-                    //Shows a Toast message indicating the registration was successful
-                    Toast.makeText(myContext,"The registration was successful !! \nYou may proceed to login to the system.",Toast.LENGTH_SHORT).show();
+                    //Checks the age whether is within range
+                    if(addAgeInt >=19 && addAgeInt <=24) {
+                        myDB.insertEntry(addNameStr, addPassStr, ADMIN_NO, addAgeInt);
+                        //Shows a Toast message indicating the registration was successful
+                        Toast.makeText(myContext, "The registration was successful !! \nYou may proceed to login to the system.", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        //Shows a Toast message indicating that the age is out of valid range
+                        Toast.makeText(myContext,"Please enter the age with the range of 19 to 24 years old.",Toast.LENGTH_SHORT).show();
+                    }
+
+
                 }
                 catch(NumberFormatException nfe)
                 {
