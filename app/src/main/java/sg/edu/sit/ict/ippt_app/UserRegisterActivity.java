@@ -22,7 +22,8 @@ public class UserRegisterActivity extends Activity {
     EditText addNameET;
     EditText addPassET;
     EditText addAgeET;
-    EditText addAdminET;
+
+    static final String ADMIN_NO = "ADMIN_NUMBER";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class UserRegisterActivity extends Activity {
         addNameET = (EditText)findViewById(R.id.etRegister_UN);
         addPassET = (EditText)findViewById(R.id.etRegister_Pwd);
         addAgeET = (EditText)findViewById(R.id.etRegister_Age);
-        addAdminET= (EditText)findViewById(R.id.etRegister_AdminNo);
+
         myDB = new myDbAdapter(myContext);
         myDB.open();
         myAddRecordBtn.setOnClickListener(new OnClickListener(){
@@ -45,12 +46,37 @@ public class UserRegisterActivity extends Activity {
                 String addNameStr = addNameET.getText().toString();
                 String addPassStr = addPassET.getText().toString();
 
-                String addAdminStr = addAdminET.getText().toString();
-                String addAgeInt = addAgeET.getText().toString();
-                myDB.insertEntry(addNameStr, addPassStr, addAdminStr, Integer.parseInt(addAgeInt));
+                String str_Age = addAgeET.getText().toString();
+                int addAgeInt = 0;
 
-                //Shows a Toast message indicating the registration was successful
-                Toast.makeText(myContext,"THe registration was successful !! \nYou may proceed to login to the system.",Toast.LENGTH_SHORT).show();
+                if(addNameStr.length() == 0)
+                {
+                    Toast.makeText(myContext,"Please provide a user name for registration.",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(addPassStr.length() == 0)
+                {
+                    Toast.makeText(myContext,"Please provide your password for registration.",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                try
+                {
+                    addAgeInt = Integer.parseInt(str_Age);
+                    myDB.insertEntry(addNameStr, addPassStr, ADMIN_NO, addAgeInt);
+
+                    //Shows a Toast message indicating the registration was successful
+                    Toast.makeText(myContext,"The registration was successful !! \nYou may proceed to login to the system.",Toast.LENGTH_SHORT).show();
+                }
+                catch(NumberFormatException nfe)
+                {
+                    addAgeET.setText("");
+                    Toast.makeText(myContext, "You entered an invalid age.\nPlease enter your age again.", Toast.LENGTH_LONG).show();
+                }
+
+
+
             }
         });
 
