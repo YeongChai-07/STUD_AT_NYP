@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginProfile extends Activity {
@@ -33,9 +32,9 @@ public class LoginProfile extends Activity {
 
         BroadcastReceiver closeReceiver;
 
-        myBtn = (Button) findViewById(R.id.button1);
-        myEt = (EditText) findViewById(R.id.editText1);
-        myEt2 = (EditText) findViewById(R.id.editText2);
+        myBtn = (Button) findViewById(R.id.btn_SignIn);
+        myEt = (EditText) findViewById(R.id.etLogin_UN);
+        myEt2 = (EditText) findViewById(R.id.etLogin_Pwd);
         myIntent = new Intent(getBaseContext(), yc_napfaPerfMain.class);
         myDB = new myDbAdapter(myContext);
 
@@ -86,8 +85,8 @@ public class LoginProfile extends Activity {
             // }
 
         });
-        myBtn2 = (Button) findViewById(R.id.button2);
-        myIntent2 = new Intent(this, UserLoginActivity.class);
+        myBtn2 = (Button) findViewById(R.id.btn_SignUp);
+        myIntent2 = new Intent(this, UserRegisterActivity.class);
         myBtn2.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {

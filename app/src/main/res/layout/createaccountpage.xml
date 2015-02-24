@@ -12,19 +12,19 @@
     	android:layout_width="wrap_content" 
     	android:layout_height="wrap_content" android:textSize="20sp"/>
 
-<EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="wrap_content">
+<EditText android:id="@+id/etRegister_UN" android:layout_width="match_parent" android:layout_height="wrap_content">
     <requestFocus></requestFocus>
 </EditText>
 <TextView android:text="Password" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp"></TextView>
-<EditText android:id="@+id/editText2" android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content"></EditText>
+<EditText android:id="@+id/etRegister_Pwd" android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content"></EditText>
 <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout2" android:layout_width="match_parent">
     <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView4" android:text="Admin No." android:layout_alignParentLeft="true"></TextView>
-    <EditText android:layout_height="wrap_content" android:id="@+id/adminNo" android:layout_toRightOf="@+id/textView4" android:layout_alignTop="@+id/textView4" android:layout_width="100dip"></EditText>
-    <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/enterAge" android:layout_below="@+id/adminNo" android:layout_alignLeft="@+id/adminNo" android:layout_alignRight="@+id/adminNo"></EditText>
-    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView5" android:text="Enter AGE" android:layout_width="wrap_content" android:layout_below="@+id/adminNo" android:layout_toLeftOf="@+id/adminNo"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+id/etRegister_AdminNo" android:layout_toRightOf="@+id/textView4" android:layout_alignTop="@+id/textView4" android:layout_width="100dip"></EditText>
+    <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/etRegister_Age" android:layout_below="@+id/etRegister_AdminNo" android:layout_alignLeft="@+id/etRegister_AdminNo" android:layout_alignRight="@+id/etRegister_AdminNo"></EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView5" android:text="Enter AGE" android:layout_width="wrap_content" android:layout_below="@+id/etRegister_AdminNo" android:layout_toLeftOf="@+id/etRegister_AdminNo"></TextView>
 </RelativeLayout>
-<Button android:layout_width="match_parent" android:text="Create Account" android:layout_height="wrap_content" android:id="@+id/button2"></Button>
+<Button android:layout_width="match_parent" android:text="Create Account" android:layout_height="wrap_content" android:id="@+id/btn_SignUp"></Button>
 <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent">
-    <Button android:id="@+id/button1" android:text="Login Page" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+    <Button android:id="@+id/btn_SignIn" android:text="Login Page" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
 </LinearLayout>
 </LinearLayout>

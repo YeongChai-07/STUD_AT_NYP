@@ -9,18 +9,18 @@
     </RelativeLayout>
     <TextView 
     	android:text="User Name" 
-    	android:id="@+id/textView1" 
+    	android:id="@+id/textView1"
     	android:layout_width="wrap_content" 
     	android:layout_height="wrap_content" android:textSize="20sp"/>
 
-    <EditText android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="match_parent" android:hint="Enter UserName">
+    <EditText android:layout_height="wrap_content" android:id="@+id/etLogin_UN" android:layout_width="match_parent" android:hint="Enter UserName">
         <requestFocus></requestFocus>
     </EditText>
     <TextView android:text="Password" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp"></TextView>
-    <EditText android:layout_height="wrap_content" android:id="@+id/editText2" android:inputType="textPassword" android:layout_width="match_parent" android:hint="Enter Password"></EditText>
+    <EditText android:layout_height="wrap_content" android:id="@+id/etLogin_Pwd" android:inputType="textPassword" android:layout_width="match_parent" android:hint="Enter Password"></EditText>
     <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1">
-        <Button android:id="@+id/button1" android:text="Sign In" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1.08"></Button>
-        <Button android:id="@+id/button2" android:layout_width="184dp" android:text="Sign Up" android:layout_height="wrap_content"></Button>
+        <Button android:id="@+id/btn_SignIn" android:text="Sign In" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1.08"></Button>
+        <Button android:id="@+id/btn_SignUp" android:layout_width="184dp" android:text="Sign Up" android:layout_height="wrap_content"></Button>
     </LinearLayout>
     
 </LinearLayout>

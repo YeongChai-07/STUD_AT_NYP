@@ -93,14 +93,18 @@ public class sitNReachActivity extends Activity {
                 // TODO Auto-generated method stub
 
                 //Do your fanciful validation code here
-                if(sRET.getText().toString()==null){
-                    Toast.makeText(myContext, "There is nothing to submit!", Toast.LENGTH_LONG).show();
-                }else{
+
+                try {
                     sRET1 = Integer.parseInt(sRET.getText().toString());
                     //Toast.makeText(myContext, "Success!", Toast.LENGTH_LONG).show();
                     setResult(RESULT_OK, new Intent()
                             .putExtra("SNR_NO", (byte)sRET1));
                     finish();
+                }
+                catch(NumberFormatException nfe)
+                {
+                    sRET.setText("0");
+                    Toast.makeText(myContext, "You entered an invalid input. Reverting back to the default value.", Toast.LENGTH_LONG).show();
                 }
 
             }

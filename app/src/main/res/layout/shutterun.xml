@@ -7,8 +7,8 @@
   android:background="@drawable/bckgrd">
     <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
         <RelativeLayout android:id="@+id/relativeLayout2" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_width="match_parent">
-            <Button android:text="Done" android:layout_width="140dp" android:id="@+id/button1" android:layout_height="50dp"></Button>
-            <Button android:layout_alignParentRight="true" android:text="Cancel" android:id="@+id/button2" android:layout_width="140dp" android:layout_height="50dp"></Button>
+            <Button android:text="Done" android:layout_width="140dp" android:id="@+id/btn_SignIn" android:layout_height="50dp"></Button>
+            <Button android:layout_alignParentRight="true" android:text="Cancel" android:id="@+id/btn_SignUp" android:layout_width="140dp" android:layout_height="50dp"></Button>
         </RelativeLayout>
         <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent">
             <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="Shutter Run" android:layout_gravity="center"></TextView>
@@ -16,7 +16,7 @@
         </LinearLayout>
         <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:orientation="vertical" android:layout_centerVertical="true" android:layout_width="match_parent">
             <LinearLayout android:id="@+id/linearLayout1" android:weightSum="1" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginBottom="7dp">
-                <extras.Chronometer android:id="@+id/shuttleRunChronometer" android:layout_weight="0.2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.0"></extras.Chronometer>
+                <sg.edu.sit.ict.ippt_app.extras.Chronometer android:id="@+id/shuttleRunChronometer" android:layout_weight="0.2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.0"></sg.edu.sit.ict.ippt_app.extras.Chronometer>
                 
                 <TextView android:layout_width="wrap_content" android:text="Sec" android:layout_weight="0.2" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView2" android:layout_height="wrap_content"></TextView>
             </LinearLayout>

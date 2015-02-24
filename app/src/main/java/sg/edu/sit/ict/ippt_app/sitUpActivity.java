@@ -131,16 +131,18 @@ public class sitUpActivity extends Activity{
 
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-
-                //Do your fanciful validation code here
-                if(myET.getText().toString()==null){
-                    Toast.makeText(myContext, "There is nothing to submit!", Toast.LENGTH_LONG).show();
-                }else{
+                try
+                {
                     myET1 = Integer.parseInt(myET.getText().toString());
                     //Toast.makeText(myContext, "Success!", Toast.LENGTH_LONG).show();
                     setResult(RESULT_OK,new Intent()
                             .putExtra("SITUP_NO", (byte)myET1));
                     finish();
+                }
+                //Do your fanciful validation code here
+                catch(NumberFormatException nfe)
+                {
+                    Toast.makeText(myContext, "There is nothing to submit!", Toast.LENGTH_LONG).show();
                 }
 
             }

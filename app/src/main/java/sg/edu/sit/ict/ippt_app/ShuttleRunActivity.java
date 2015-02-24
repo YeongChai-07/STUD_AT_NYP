@@ -31,8 +31,8 @@ public class ShuttleRunActivity extends Activity {
         myStopWatch = (Chronometer)findViewById(R.id.shuttleRunChronometer);
 
         startBtn = (Button)findViewById(R.id.button3);
-        doneBtn = (Button)findViewById(R.id.button1);
-        cancelBtn = (Button)findViewById(R.id.button2);
+        doneBtn = (Button)findViewById(R.id.btn_SignIn);
+        cancelBtn = (Button)findViewById(R.id.btn_SignUp);
 
         napfaSP = getSharedPreferences("NAPFA_RESULT_DRAFT", 0);
 
