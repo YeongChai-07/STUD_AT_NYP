@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bckgrd">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relativeLayout2" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_width="match_parent">
+            <Button android:text="Done" android:layout_width="140dp" android:id="@+id/longDistanceDone" android:layout_height="50dp"></Button>
+            <Button android:layout_alignParentRight="true" android:text="Cancel" android:id="@+id/longDistanceCancel" android:layout_width="140dp" android:layout_height="50dp"></Button>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/linearLayout5" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:layout_marginBottom="30dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.4km run" android:id="@+id/textView1" android:layout_gravity="center"></TextView>
+                <TextView android:layout_width="130dp" android:layout_height="100dp" android:id="@+id/textView3" android:layout_gravity="center" android:background="@drawable/running"></TextView>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearLayout1" android:weightSum="1" android:layout_width="match_parent" android:orientation="horizontal" android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearLayout4" android:weightSum="1" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_width="50dp"
+                        android:id="@+id/et2pt4_Mins"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="13dp" />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"
+                        android:id="@+id/textView"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_width="50dp"
+                        android:id="@+id/et2pt4_Secs"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="20dp" />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secs"
+                        android:id="@+id/textView6"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <Button android:text="Start timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/longDistanceStartTimer" android:layout_weight="0.5"
+                    android:visibility="gone"></Button>
+
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instructions :" android:id="@+id/textView4"></TextView>
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.Press start button if you are ready (This will start the timer)" android:id="@+id/textView5"></TextView>
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.Press stop button when you are done (This will stop the timer)" android:id="@+id/textView5"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+    </RelativeLayout>
+    
+</LinearLayout>
